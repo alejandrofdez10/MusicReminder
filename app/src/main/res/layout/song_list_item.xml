@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#84A98C"
+    android:backgroundTint="#84A98C"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <ImageButton
+        android:id="@+id/btnYoutubeLink"
+        android:layout_width="81dp"
+        android:layout_height="77dp"
+        android:src="@drawable/ic_youtube_thumbnail_placeholder"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:onClick="openYoutubeLink"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Nombre del autor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Nombre de la canción"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtListenDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Fecha de escucha" />
+
+        <TextView
+            android:id="@+id/txtReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Por qué me gusta" />
+
+    </LinearLayout>
+</LinearLayout>

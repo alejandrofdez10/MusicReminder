@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAD2C5"
+    tools:context=".AddSongActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2F3E46"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="ADD SONG"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#2F3E46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSongName"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="212dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Name of the song"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <EditText
+        android:id="@+id/etArtistName"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Name of the artist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSongName" />
+
+    <EditText
+        android:id="@+id/etReason"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Why you like this song?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etArtistName" />
+
+    <EditText
+        android:id="@+id/etYoutubeLink"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="YouTube link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etReason" />
+
+    <EditText
+        android:id="@+id/etListenDate"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="src_over"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etYoutubeLink" />
+
+    <Button
+        android:id="@+id/btnAddToPlaylist"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="288dp"
+        android:backgroundTint="#354F52"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="ADD TO THE LIST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etListenDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

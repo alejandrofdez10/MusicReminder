@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAD2C5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="#2F3E46"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Music Reminder"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddSong"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="#354F52"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Add new songs in the list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <Button
+        android:id="@+id/btnViewList"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#354F52"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="View Songs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddSong" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
